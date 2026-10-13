@@ -1,0 +1,20 @@
+public class Kata {
+
+  public static int[] arrayDiff(int[] a, int[] b) {
+    List <Interger> resultado = new ArrayList<>();
+    
+    for (int numero : a) {
+      if (!b.contains(numero)) {
+        resultado.add(numero);
+      }
+    }
+    return resultado;
+  }
+
+    public static void main (String[] args) {
+      List int[] a = Arrays.asList(1,2,2,2,3); 
+      List int[] b = Arrays.asList(2);
+      
+      System.out.println(arrayDiff(a,b));
+    }
+}
